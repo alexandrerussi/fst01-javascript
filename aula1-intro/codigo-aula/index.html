@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- CÓDIGO HTML AQUI -->
+    <p id="mensagem"></p>
+
+    
+    <script>
+        // DOM - DOCUMENT OBJECT MODEL
+
+        let nomeUsuario = "Leopoldo";
+        document.getElementById("mensagem").innerHTML = `<strong>Olá, ${nomeUsuario}!</strong>`;
+
+
+
+        // CÓDIGO JS AQUI
+        console.log("Olá mundo interno HTML!");
+
+        /*
+            ISSO É UM COMENTÁRIO
+            EM MÚLTIPLAS LINHAS!!
+        */
+
+
+        // STRINGS
+        let nomeCompleto = "Joaquim";
+        
+        // NUMBERS
+        let userId = 1234;
+
+        let numero = 10;
+
+        console.log(numero);
+
+        let preco = 10.5;
+        console.log(preco);
+
+        console.log(typeof(preco));
+
+        // BOOLEANS
+        let usuarioAutenticado = true;
+        console.log(typeof(usuarioAutenticado));
+
+        // UNDEFINED
+        let nome;
+        console.log(typeof(nome));
+
+        // NULL
+        let nome2 = null;
+        console.log(typeof(nome2));
+
+        // COERÇÃO IMPLÍCITA
+        let resultado = 2 + "3";
+        console.log(resultado);
+
+        // COERÇÃO EXPLÍCITA
+        let score = Number("200");
+        console.log(typeof(score));
+
+        // TEMPLATE STRING -- TEMPLATE LITERAL
+
+        nome = "Rafael";
+        let saudacao = `Olá, ${nome}!`;
+        let saudacao2 = "Olá " + nome + "!";
+        console.log(saudacao);
+        console.log(saudacao2);
+
+
+        // ALERT
+        nome = "João";
+        saudacao = `Olá, ${nome}!`; 
+        window.alert(saudacao);
+
+        // CONFIRM
+        let resposta = window.confirm("Deseja continuar?");
+        console.log(resposta);
+
+        // PROMPT
+        let idade = +prompt("Digite sua idade");
+        console.log(`Idade do usuário é: ${idade}, o tipo da variável idade é: ${typeof(idade)}`);  
+
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
