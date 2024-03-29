@@ -35,6 +35,6 @@ let potencia = numero1 ** numero2;
 console.log("Potência: " + potencia)
 
 // MÓDULO -- RESTO
-numero1 = 5;
+// numero1 = 5;
 let resto = numero1 % numero2;
 console.log("Resto da divisão: " + resto);
