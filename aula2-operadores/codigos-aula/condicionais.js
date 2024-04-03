@@ -20,13 +20,16 @@ console.log("FIM");
 let idade = 30;
 
 if (idade < 18){
-    console.log("DIMENÓ");
+    // console.log("DIMENÓ");
     console.log(`O jovem capetinha tem ${idade} ano(s)`);
 } else {
-    console.log("DIMAIÓ");
+    // console.log("DIMAIÓ");
     console.log(`A idade do carinha é ${idade}`);
 }
 
+// IF TERNÁRIO
+let resultado = (idade < 18) ? "DIMENÓ" : "DIMAIÓ";
+console.log(resultado);
 
 // -----------------------------------------------
 // ESTRUTURA CONDICIONAL ENCADEADA
@@ -46,15 +49,15 @@ let mae = "rihanna";
 // }
 
 // ESTRUTURA CONDICIONAL ENCADEADA MELHORADA...
-mae = "pabLao".toLowerCase();
-let pai = "tamy";
+// mae = "pabLao".toLowerCase();
+// let pai = "tamy";
 
-if (mae == "beyonce") {
-    console.log("TU É MTO RICO");
-} else if (mae == "rihanna") {
-    console.log("VOCÊ É UM POUCO MENOS RICO");
-} else if (mae == "pablao" && pai == "tamy") {
-    console.log("EH, NAO SEI OQ DIZER");
-} else {
-    console.log("Pobre BR");
-}
+// if (mae == "beyonce") {
+//     console.log("TU É MTO RICO");
+// } else if (mae == "rihanna") {
+//     console.log("VOCÊ É UM POUCO MENOS RICO");
+// } else if (mae == "pablao" && pai == "tamy") {
+//     console.log("EH, NAO SEI OQ DIZER");
+// } else {
+//     console.log("Pobre BR");
+// }
