@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        let artistas = ["Pablão", "Jojo", "MC Pipoquinha"];
+        console.log(artistas);
+
+        // INSERIR NOVO ELEMENTO NO FINAL DO ARRAY;
+        artistas.push("MC Daleste");
+        console.log(artistas);
+
+        // INSERIR NOVO ELEMENTO NO COMEÇO DO ARRAY
+        artistas.unshift("Falcão");
+        console.log(artistas);
+
+        // REMOVER O ÚLTIMO ELEMENTO DO ARRAY
+        artistas.pop();
+        console.log(artistas);
+
+        // REMOVER O PRIMEIRO ELEMENTO DO ARRAY
+        artistas.shift();
+        artistas.shift();
+        console.log(artistas);
+
+        console.log(" --- ");
+
+        let artistasDeVerdade = ["Silvio Santos", "Slash"];
+        console.log(artistasDeVerdade);
+
+        let artistasJuntos = artistas.concat(artistasDeVerdade);
+        console.log(" --- ");
+        console.log(artistasJuntos);
+
+        artistasJuntos.splice(2, 2, "Novo artista");
+        // console.log(apagados);
+        console.log(artistasJuntos.reverse());
+
+    </script>
+</body>
+
+</html>

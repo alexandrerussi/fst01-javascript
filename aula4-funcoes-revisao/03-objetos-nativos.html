@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Nativos</title>
+</head>
+
+<body>
+
+    <script>
+        // OBJETO MATH
+        let valor = 2.0000001;
+        console.log(Math.floor(valor));
+        console.log(Math.round(valor));
+        console.log(Math.ceil(valor));
+
+        console.log(Math.PI);
+
+        // NÚMEROS SORTEADOS
+        let numAleatorio = Math.random();
+        console.log(`Num Sorteado: ${numAleatorio}`); // 0.27468235443073086
+
+        let numAleatorio10 = numAleatorio * 10; // 0.27468235443073086 * 10 = 2.7468235443073086
+        console.log(numAleatorio10); // 2.7468235443073086
+        console.log(Math.round(numAleatorio10)); // 2.7468235443073086 = 3
+
+        // let numeroSorteado = Math.round(Math.random() * 10);
+        // if ( numeroSorteado == 9) {
+        //     console.log("O NUMERO É 9");
+        // }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISÃO DE FOR E ARRAY</title>
+</head>
+<body>
+    <script>
+       /* 
+        // FOR INDEXADO OU FOR CLÁSSICO  
+        for (let contador = 0; contador < 3; contador++) {
+            console.log(`Contador: ${contador}`);
+        }
+
+        // LISTA -- ARRAY
+
+        let frutas = ["Maçã", "Banana", "Pitaia"]; // array de 1 dimensão
+
+        // frutas[0] = Maçã
+        // frutas[1] = Banana
+        // frutas[2] = Pitaia
+
+        console.log(frutas);
+        console.log(frutas[2]);
+
+        // MANIPULAR OS ARRAYS
+        
+
+        // PERCORRENDO ARRAYS
+
+        let qtdFrutas = frutas.length; // 3 (tamanho do array)
+        console.log(qtdFrutas); 
+        console.log(" ------ ");
+
+        // FOR CLÁSSICO - FOR INDEXADO
+        for (let i = 0; i < qtdFrutas; i++) {
+            console.log(`Pos.: ${i} | Valor: ${frutas[i]}`);
+        }
+
+        console.log(" ------ ");
+
+
+        // FOR IN --- ECMASCRIPT 5
+        for (let posicao in frutas) {
+            console.log(posicao, frutas[posicao]);
+        }
+
+        console.log(" ------ ");
+
+        // FOR OF
+        for (let fruta of frutas) {
+            console.log(frutas.indexOf(fruta), fruta);
+        }
+
+        // console.log(" ------ ");
+
+        // console.log(frutas.indexOf("Maçã"));
+
+        */
+
+        let gradeProdutos = [
+            ["Martelo", 10.40, 2],
+            ["Alicate", 37.97, 8]
+        ];
+
+        // let linha = 0;
+        // let coluna = 2;
+        // console.log(gradeProdutos[linha][coluna]);
+
+        for (let linha = 0; linha < gradeProdutos.length; linha++) {
+            // console.log(linha);
+            // console.log(gradeProdutos[linha]);
+
+            for (let coluna = 0; coluna < gradeProdutos[linha].length; coluna++) {
+                console.log(gradeProdutos[linha][coluna]);
+            }
+
+            console.log(" -------------- SEPARA ------------")
+        }
+
+
+    </script>
+</body>
+</html>
