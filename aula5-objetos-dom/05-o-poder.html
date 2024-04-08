@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let products = [
+            {
+                name: "Fogão",
+                price: 1221.06,
+                linkImg: "https://a-static.mlcdn.com.br/280x210/fogao-5-bocas-mesa-de-vidro-atlas-preto-acendimento-automatico-monaco-top-glass/magazineluiza/225278200/1e5fc8633dd1f0443b70293968d562cc.jpg"
+            },
+            {
+                name: "Máquina de lavar",
+                price: 1849.00,
+                linkImg: "https://a-static.mlcdn.com.br/280x210/maquina-de-lavar-electrolux-13kg-branca-essential-care-com-cesto-inox-e-jet-clean-led13/electrolux/310118597/d24d1923a1146166368d406cbd7c9c7b.jpeg"
+            }
+        ];
+
+        // Get the body element to append cards
+        const body = document.body;
+
+        // Loop through the products array and create cards
+        products.forEach(product => {
+            // Create a card div
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            // Create an image element
+            const img = document.createElement('img');
+            img.src = product.linkImg;
+            img.alt = product.name;
+
+            // Create a div for card content
+            const cardContent = document.createElement('div');
+            cardContent.className = 'card-content';
+
+            // Add product name and price to card content
+            cardContent.innerHTML = `<h3>${product.name}</h3><p>Price: $${product.price.toFixed(2)}</p>`;
+
+            // Append image and content to the card
+            card.appendChild(img);
+            card.appendChild(cardContent);
+
+            // Append the card to the body
+            body.appendChild(card);
+        });
+    </script>
+
+</body>
+
+</html>
