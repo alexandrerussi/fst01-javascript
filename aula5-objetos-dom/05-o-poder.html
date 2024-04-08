@@ -50,32 +50,32 @@
             }
         ];
 
-        // Get the body element to append cards
+        // Pegeando o elemento body para inserir os cards (append)
         const body = document.body;
 
-        // Loop through the products array and create cards
+        // Loop pelo array de products e criar cards para cada um
         products.forEach(product => {
-            // Create a card div
+            // Criar a div com classe card
             const card = document.createElement('div');
             card.className = 'card';
 
-            // Create an image element
+            // Criar um elemento de imagem com src sendo um link e alt o nome do produto 
             const img = document.createElement('img');
             img.src = product.linkImg;
             img.alt = product.name;
 
-            // Create a div for card content
+            // Criando uma div para o card content
             const cardContent = document.createElement('div');
             cardContent.className = 'card-content';
 
-            // Add product name and price to card content
+            // Adicionando nome do produto e preço na div de card content
             cardContent.innerHTML = `<h3>${product.name}</h3><p>Price: $${product.price.toFixed(2)}</p>`;
 
-            // Append image and content to the card
+            // Inserir imagem e conteúdo na div com class card
             card.appendChild(img);
             card.appendChild(cardContent);
 
-            // Append the card to the body
+            // Inserindo card no body (append)
             body.appendChild(card);
         });
     </script>
