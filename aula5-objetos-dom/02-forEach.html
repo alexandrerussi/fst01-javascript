@@ -9,11 +9,29 @@
     <script>
 
         // LISTA
-
+        let lista = [10, 20, 30, 40];
 
         // FOR EACH É UMA OUTRA MANEIRA DE PERCORRER ARRAYS
         // PARA CADA...
         // SINTAXE:
+
+        // function funcArray(valor, indice, listaParam) {
+        //     console.log(`valor: ${valor} | indíce: ${indice} | lista: ${listaParam}`)
+        // }
+
+        // lista.forEach(funcArray);
+
+        // FUNÇÃO ANONIMA
+        lista.forEach(function (v, i, arr) {
+            console.log(`${v}, ${i}, [${arr}]`)
+        });
+
+        console.log("----");
+
+        // DESAFIO!!!! COMO SALVAR RETORNOS DO FOREACH (POR EX.: MULTIPLICAR CADA VALOR DA LISTA POR 2 E SALVAR ESSES VALORES EM UMA NOVA LISTA)
+        lista.forEach((v, i, arr) => {
+            console.log(`${v}, ${i}, [${arr}]`)
+        });
         
 
     </script>

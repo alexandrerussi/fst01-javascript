@@ -55,6 +55,7 @@
 
         // Loop pelo array de products e criar cards para cada um
         products.forEach(product => {
+            console.log(product);
             // Criar a div com classe card
             const card = document.createElement('div');
             card.className = 'card';
@@ -69,7 +70,10 @@
             cardContent.className = 'card-content';
 
             // Adicionando nome do produto e preço na div de card content
-            cardContent.innerHTML = `<h3>${product.name}</h3><p>Price: $${product.price.toFixed(2)}</p>`;
+            cardContent.innerHTML = `
+                <h3>${product.name}</h3>
+                <p>Price: $${product.price.toFixed(2)}</p>
+            `;
 
             // Inserir imagem e conteúdo na div com class card
             card.appendChild(img);

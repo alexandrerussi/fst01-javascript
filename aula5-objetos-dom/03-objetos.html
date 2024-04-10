@@ -9,26 +9,72 @@
     <script>
 
         // COMO FAZÍAMOS COM A LISTA...
-
+        // let pessoa = ["Alexandre", 24];
+        // pessoa[0] = Alexandre
+        // pessoa[1] = 24
+        // console.log(pessoa[0]);
 
         // DECLARAÇÃO DE UM OBJETO -- JSON -- JAVASCRIPT OBJECT NOTATION
 
-        // ATRIBUTOS:
-        // MÉTODOS:
+        // ATRIBUTOS: nome, idade, altura, interesses
+        // MÉTODOS: envelhecer
         // OBJETO PESSOA:
+        let pessoa = {
+            nome: "Alexandre",
+            idade: 24,
+            altura: 169,
+            interesses: ["Series", "Bike", "Correr", "Viajar"],
+            envelhecer: function() {
+                this.idade++;
+                console.log(this);
+            }
+        }
 
 
         // ACESSANDO AS INFORMAÇÕES/VALORES DO OBJETO:
 
+        console.log(pessoa);
+        console.log(" ");
+
+        console.log(pessoa.nome);
+        console.log(pessoa.idade);
+
+        pessoa.envelhecer();
+        
+        console.log(pessoa);
+
+        console.log(pessoa["nome"]);
+        console.log(pessoa["idade"]);
+
+        console.log(" --- ")
 
         // PERCORRENDO OBJETOS (FOR IN)
-
+        for (let key in pessoa) {
+            console.log(pessoa[key]);
+        }
 
         // PERCORRENDO LISTA DE INTERESSES DENTRO DO OBJETO!
-        
+        console.log(pessoa.interesses);
+        for (let interesse of pessoa.interesses){
+            console.log(interesse);
+        }
         
         // LISTA DE OBJETOS (LISTA DE PRODUTOS)
 
+        let produto1 = {
+            preco: 20,
+            modelo: "Arno"
+        }
+        console.log(produto1)
+        let listaProdutos = [produto1];
+        
+        let produto2 = {
+            preco: 10,
+            modelo: "Sadia"
+        }
+        
+        listaProdutos.push(produto2);
+        console.log(listaProdutos);
 
         // PRODUTO TEM O QUE??
         // ENTÃO VAMOS CRIAR UMA FUNÇÃO QUE CRIA PRODUTOS (objetos)!!
